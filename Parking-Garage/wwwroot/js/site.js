@@ -24,7 +24,6 @@ function getData(){
 function sendPostToServer(url){
     let data = getData();
     
-    
     if(!validate(data)){
         alert('fill all requirements correctly');
         return false
@@ -38,7 +37,7 @@ function sendPostToServer(url){
             document.write(xhr.responseText);
         }
         else if(xhr.readyState === 4 && xhr.status === 401){
-            alert('check-in failed')
+            alert(`check-in failed - wrong ticket, add ${xhr.responseText["res"]}$`)
             return false
         }
     }

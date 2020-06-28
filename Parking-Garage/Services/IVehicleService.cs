@@ -5,7 +5,7 @@ namespace Parking_Garage.Services
 {
     public interface IVehicleService
     {
-        bool InsertVehicle(VehicleModel vehicle);
+        int InsertVehicle(VehicleModel vehicle);
 
         void ShowGarage();
 

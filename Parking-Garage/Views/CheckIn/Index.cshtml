@@ -15,7 +15,18 @@
                 <div class="inserted-data">licence plate ID : <input class = "input-el" name="plateId" placeholder="Plate Id" id="plateId" required="true"></div>
                 <div class="inserted-data">phone : <input class = "input-el" type="tel" name="phone" placeholder="phone number" id="phone" pattern="[0-9]{3}-[0-9]{7}" required="true"></div>
                 <div class="inserted-data">ticket type : <input class = "input-el" type="text" name="ticketType" placeholder="ticket type"  id="ticketType" required="true"></div>
-                <div class="inserted-data">vehicle type :<input class = "input-el" type = "text" placeholder="vehicle type" name = "vehicleType" id="vehicleType" required="true"></div>
+                <!--<div class="inserted-data">vehicle type :<input class = "input-el" type = "text" placeholder="vehicle type" name = "vehicleType" id="vehicleType" required="true"></div>-->
+               <div class="inserted-data">
+                    vehicle type :
+                    <select class="input-el" name="vehicleType" id="vehicleType" required="true">  
+                        <option value="Motorcycle">Motorcycle</option>
+                        <option value="Private">Private</option>
+                        <option value="Crossover">Crossover</option>
+                        <option value="SUV">SUV</option>
+                        <option value="Van">Van</option>
+                        <option value="Truck">Truck</option>
+                    </select>
+                </div>
                 <div class="inserted-data">vehicle height :<input class = "input-el" type ="text" placeholder="vehicle height" name = "vehicleHeight" id="vehicleHeight" required="true"></div>
                 <div class="inserted-data">vehicle width :<input class = "input-el" type ="text" placeholder="vehicle width" name = "vehicleWidth" id="vehicleWidth" required="true"></div>
                 <div class="inserted-data">vehicle length :<input class = "input-el" type ="text" placeholder="vehicle length" name = "vehicleLength" id="vehicleLength" required="true"></div>
