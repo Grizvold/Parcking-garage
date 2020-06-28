@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Modules\" />
+    <Folder Include="JS\" />
+    <Folder Include="Html\" />
+    <Folder Include="Images\" />
+    <Folder Include="CSS\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Remove="Controllers\appsettings.json" />
+    <Content Remove="CSS\css.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Images\EmptyTextFile.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="CSS\css.cs" />
+  </ItemGroup>
+</Project>

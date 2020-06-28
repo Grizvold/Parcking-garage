@@ -1,0 +1,21 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+    <link rel="stylesheet" href="./css/main.css">
+    <div class="page">
+        <div class="header-div">
+            <h1> P.G
+                <span class="blink">a</span>
+                r
+                <span class="blink">a</span>
+                ge </h1>
+        </div>
+        <img class="page-picture" src="./images/car-logo.png" alt="main page pic">
+        <div class="container">
+            <button class="operation-btn" onclick="openWindow('http://localhost:5001/CheckIn')"> Store My Car </button>
+            <button class="operation-btn" onclick="openWindow('http://localhost:5001/CheckOut')"> Pick My Car </button>
+            <button class="operation-btn" onclick="openWindow('http://localhost:5001/GarageState')"> Garage State </button>
+        </div>
+    </div>
+    
+    <script src="../js/site.js"  type="text/javascript"> </script>

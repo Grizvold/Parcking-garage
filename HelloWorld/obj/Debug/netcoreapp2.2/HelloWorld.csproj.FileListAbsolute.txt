@@ -1,0 +1,14 @@
+/home/doron/Projects/HelloWorld/HelloWorld/obj/Debug/netcoreapp2.2/HelloWorld.csprojAssemblyReference.cache
+/home/doron/Projects/HelloWorld/HelloWorld/obj/Debug/netcoreapp2.2/HelloWorld.csproj.CoreCompileInputs.cache
+/home/doron/Projects/HelloWorld/HelloWorld/obj/Debug/netcoreapp2.2/HelloWorld.RazorAssemblyInfo.cache
+/home/doron/Projects/HelloWorld/HelloWorld/obj/Debug/netcoreapp2.2/HelloWorld.RazorAssemblyInfo.cs
+/home/doron/Projects/HelloWorld/HelloWorld/obj/Debug/netcoreapp2.2/HelloWorld.AssemblyInfoInputs.cache
+/home/doron/Projects/HelloWorld/HelloWorld/obj/Debug/netcoreapp2.2/HelloWorld.AssemblyInfo.cs
+/home/doron/Projects/HelloWorld/HelloWorld/bin/Debug/netcoreapp2.2/HelloWorld.deps.json
+/home/doron/Projects/HelloWorld/HelloWorld/bin/Debug/netcoreapp2.2/HelloWorld.runtimeconfig.json
+/home/doron/Projects/HelloWorld/HelloWorld/bin/Debug/netcoreapp2.2/HelloWorld.runtimeconfig.dev.json
+/home/doron/Projects/HelloWorld/HelloWorld/bin/Debug/netcoreapp2.2/HelloWorld.dll
+/home/doron/Projects/HelloWorld/HelloWorld/bin/Debug/netcoreapp2.2/HelloWorld.pdb
+/home/doron/Projects/HelloWorld/HelloWorld/obj/Debug/netcoreapp2.2/HelloWorld.RazorTargetAssemblyInfo.cache
+/home/doron/Projects/HelloWorld/HelloWorld/obj/Debug/netcoreapp2.2/HelloWorld.dll
+/home/doron/Projects/HelloWorld/HelloWorld/obj/Debug/netcoreapp2.2/HelloWorld.pdb

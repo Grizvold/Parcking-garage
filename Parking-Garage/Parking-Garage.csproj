@@ -1,0 +1,46 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
+    <RootNamespace>Parking_Garage</RootNamespace>
+  </PropertyGroup>
+
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="Views\Main\index.cshtml" />
+    <Content Remove="Views\Main\EmptyHtmlFile.html" />
+    <Content Remove="wwwroot\css\check-in.css" />
+    <Content Remove="wwwroot\images\check-in-car.jpeg" />
+    <Content Remove="wwwroot\images\check-out-car.jpeg" />
+    <Content Remove="wwwroot\images\parking-favicon.jpeg" />
+    <Content Remove="wwwroot\images\car-logo.png" />
+    <Content Remove="wwwroot\images\twitter-icons-background_52683-29716.jpg" />
+    <Content Remove="wwwroot\images\backImg.png" />
+    <Content Remove="Views\GarageState\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Controllers\MainController.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="wwwroot\images\" />
+    <Folder Include="Views\CheckIn\" />
+    <Folder Include="Views\CheckOut\" />
+    <Folder Include="Services\" />
+    <Folder Include="Views\GarageState\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="wwwroot\css\check-in.css" />
+    <None Include="wwwroot\images\check-in-car.jpeg" />
+    <None Include="wwwroot\images\check-out-car.jpeg" />
+    <None Include="wwwroot\images\parking-favicon.jpeg" />
+    <None Include="wwwroot\images\car-logo.png" />
+    <None Include="wwwroot\images\twitter-icons-background_52683-29716.jpg" />
+    <None Include="wwwroot\images\backImg.png" />
+  </ItemGroup>
+</Project>

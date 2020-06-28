@@ -1,0 +1,24 @@
+﻿@{
+    ViewData["Title"] = "Check Out Page";
+}
+   
+<link rel="stylesheet" href="./css/main.css">
+<link rel="stylesheet" href="./css/check-in.css">
+
+<div class="page">
+    <div class="header-div"> 
+        <h1 class="header-page"> pick my car </h1>
+        <img class="page-picture" src="../images/check-out-car.jpeg" alt="checl out car">
+    </div>
+    <div class="container">
+        <form id="createVersionForm" class = "form-data" >
+            <div class="inserted-data">licence plate ID : <input class = "input-el" name="plateId" placeholder="Plate Id" id="plateId" required="true"></div>           
+            <div class="submit-div"><input class="simple-button" onclick="sendDeleteToServer('http://localhost:5001/CheckOut')" type = "button" value = "check out" /></div>
+        </form>
+    </div>
+    
+    <input class="simple-button" type = "button" onclick="openWindow('http://localhost:5001/')" value="return to main page"/>
+    
+</div>
+  
+  <script src="../js/site.js"  type="text/javascript"> </script>

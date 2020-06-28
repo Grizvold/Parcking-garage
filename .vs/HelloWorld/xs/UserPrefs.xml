@@ -1,0 +1,31 @@
+﻿<Properties StartupConfiguration="{7D73A0E3-C5B7-44A8-8320-1A12C9B8666F}|Default">
+  <MonoDevelop.Ide.ItemProperties.ParkingGarage PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="HelloWorld/Modules/Vehicle.cs">
+    <Files>
+      <File FileName="HelloWorld/Modules/Vehicle.cs" Line="42" Column="13" />
+      <File FileName="HelloWorld/Program.cs" Line="22" Column="50" />
+      <File FileName="HelloWorld/appsettings.json" Line="1" Column="1" />
+      <File FileName="HelloWorld/appsettings.Development.json" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="HelloWorld" expanded="True">
+            <Node name="HelloWorld" expanded="True">
+              <Node name="Dependencies" expanded="True">
+                <Node name="PackageDependencies" selected="True" />
+              </Node>
+              <Node name="Modules" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

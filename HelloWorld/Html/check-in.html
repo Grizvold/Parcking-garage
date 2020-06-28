@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./Images/parking-favicon.jpeg">
+    <link rel="stylesheet" href="./CSS/main.css">
+    <link rel="stylesheet" href="./CSS/check-in.css">
+    <title>Check in</title>
+</head>
+<body>
+    <div class="page">
+        <div class="header-div"> 
+            <h1 class="header-page"> car details </h1>
+            <img class="page-picture" src="./check-in-car.jpeg" alt="checl out car">
+        </div>
+        <div class="container">
+            <form id="createVersionForm" class = "form-data" >
+                <div class="inserted-data">name :<input class = "input-el" type = "text" placeholder="Name" name = "name" id="name" required></div>
+                <div class="inserted-data">licence plate ID : <input class = "input-el" name="plateId" placeholder="Plate Id" id="plateId" required></div>
+                <div class="inserted-data">phone : <input class = "input-el" type="tel" name="phone" placeholder="phone number" id="phone" pattern="[0-9]{3}-[0-9]{7}" required></div>
+                <div class="inserted-data">ticket type : <input class = "input-el" type="text" name="ticketType" placeholder="ticket type"  id="ticketType" required></div>
+                <div class="inserted-data">vehicle type :<input class = "input-el" type = "text" placeholder="vehicle type" name = "vehicleType" id="vehicleType" required></div>
+                <div class="inserted-data">car height :<input class = "input-el" type ="text" placeholder="car height" name = "carHeight" id="carHeight" required></div>
+                <div class="inserted-data">car width :<input class = "input-el" type ="text" placeholder="car width" name = "carWidth" id="carWidth" required></div>
+                <div class="inserted-data">car length :<input class = "input-el" type ="text" placeholder="car length" name = "carLength" id="carLength" required></div>
+                <div class="submit-div"><input class="simple-button" onclick="" type = "button" value = "submit" /></div>
+                
+            </form>
+        </div>
+        
+        
+        <input class="simple-button" type = "button" onclick="openWin('http://localhost:5001/')" value="return to main page"/>
+        
+    </div>
+        <script src="{{ url_for('static', filename='js/createVersion.js/') }}"  type = "text/javascript"> </script>
+            <script src="{{ url_for('static', filename='js/mainPage.js/') }}"  type = "text/javascript"> </script>
+</body>
+</html>
