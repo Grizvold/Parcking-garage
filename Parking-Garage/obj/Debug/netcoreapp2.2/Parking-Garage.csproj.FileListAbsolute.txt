@@ -28,3 +28,4 @@
 /home/doron/Projects/HelloWorld/Parking-Garage/obj/Debug/netcoreapp2.2/Parking-Garage.dll
 /home/doron/Projects/HelloWorld/Parking-Garage/obj/Debug/netcoreapp2.2/Parking-Garage.pdb
 /home/doron/Projects/HelloWorld/Parking-Garage/obj/Debug/netcoreapp2.2/Parking-Garage.csproj.CopyComplete
+/home/doron/Projects/HelloWorld/Parking-Garage/obj/Debug/netcoreapp2.2/Parking-Garage.csprojAssemblyReference.cache

@@ -1,10 +1,6 @@
 
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParkingGarage", "HelloWorld\ParkingGarage.csproj", "{7D73A0E3-C5B7-44A8-8320-1A12C9B8666F}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParkGarage", "ParkGarage\ParkGarage.csproj", "{58C08B36-43E1-4ED3-86D2-FD36D19ED852}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Parking-Garage", "Parking-Garage\Parking-Garage.csproj", "{F99150F1-59FF-48D9-A42B-CEF20D4EC599}"
 EndProject
 Global
@@ -13,14 +9,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{7D73A0E3-C5B7-44A8-8320-1A12C9B8666F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7D73A0E3-C5B7-44A8-8320-1A12C9B8666F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7D73A0E3-C5B7-44A8-8320-1A12C9B8666F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7D73A0E3-C5B7-44A8-8320-1A12C9B8666F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{58C08B36-43E1-4ED3-86D2-FD36D19ED852}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{58C08B36-43E1-4ED3-86D2-FD36D19ED852}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{58C08B36-43E1-4ED3-86D2-FD36D19ED852}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{58C08B36-43E1-4ED3-86D2-FD36D19ED852}.Release|Any CPU.Build.0 = Release|Any CPU
 		{F99150F1-59FF-48D9-A42B-CEF20D4EC599}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{F99150F1-59FF-48D9-A42B-CEF20D4EC599}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F99150F1-59FF-48D9-A42B-CEF20D4EC599}.Release|Any CPU.ActiveCfg = Release|Any CPU
