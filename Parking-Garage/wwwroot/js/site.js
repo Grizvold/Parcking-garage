@@ -34,10 +34,12 @@ function sendPostToServer(url){
     xhr.setRequestHeader("Content-Type", "application/json");
     xhr.onreadystatechange = function () {
         if (xhr.readyState === 4 && xhr.status === 200) {
-            document.write(xhr.responseText);
+            /*document.write(xhr.responseText);*/
+            document.getElementById("createVersionForm").reset();
+            alert('Checked-in successfully');
         }
-        else if(xhr.readyState === 4 && xhr.status === 401){
-            alert(`check-in failed - wrong ticket, add ${xhr.responseText["res"]}$`)
+        else if(xhr.readyState === 4 && xhr.status === 400){
+            alert(`check-in failed - wrong ticket, add ${JSON.parse(xhr.responseText)[0]}$`)
             return false
         }
     }
@@ -68,10 +70,11 @@ let data = {
         xhr.setRequestHeader("Content-Type", "application/json");
         xhr.onreadystatechange = function () {
             if (xhr.readyState === 4 && xhr.status === 200) {
-                document.write(xhr.responseText);
+                document.getElementById("createVersionForm").reset();
+                alert('Checked-out successfully');
             }
-            else if(xhr.readyState === 4 && xhr.status === 401){
-                alert('check-in failed')
+            else if(xhr.readyState === 4 && xhr.status === 400){
+                alert('vehicle not exists')
                 return false
             }
         }

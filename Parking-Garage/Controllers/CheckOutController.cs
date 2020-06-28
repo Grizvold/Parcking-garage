@@ -33,11 +33,16 @@ namespace Parking_Garage.Controllers
 
             Console.WriteLine("before checkout");
             _vehicleService.ShowGarage();
-            _vehicleService.checkOutVehicle(plate_id);
-            Console.WriteLine("after checkout");
-            _vehicleService.ShowGarage();
+            Console.WriteLine("plate:" + plate_id);
 
-            return View();
+            if (_vehicleService.checkOutVehicle(plate_id))
+            {
+                _vehicleService.ShowGarage();
+
+                return Ok();
+            }
+
+            return BadRequest();
         }
     }
 }

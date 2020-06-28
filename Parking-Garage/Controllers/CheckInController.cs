@@ -28,7 +28,7 @@ namespace Parking_Garage.Controllers
         }
 
         [HttpPost]
-        public ActionResult Index([FromBody] VehicleModel vehicle)
+        public IActionResult Index([FromBody] VehicleModel vehicle)
         {
             Console.WriteLine("gor post");
 
@@ -45,22 +45,53 @@ namespace Parking_Garage.Controllers
             Console.WriteLine(res);
 
             _vehicleService.ShowGarage();
+            IEnumerable<int> responseResult = new List<int> { res };
 
             if(res != 0)
             {
-                //Stream stream = Response.Body;
-                //stream.Write(Encoding.UTF8.GetBytes("" + res + ""));
-                //Response.ContentType = "text/plain";
-                Response.StatusCode = 401;
-                string result = "" + res;
-                Request.HttpContext.Response.Headers.Add("res", result);
+                //Response.StatusCode = 400;
+                return BadRequest(responseResult);
             }
             else
             {
-                Response.StatusCode = 200;
+                //Response.StatusCode = 200;
+                return Ok(responseResult);
             }
-
-            return View();
         }
+        //public StatusCodeResult Index([FromBody] VehicleModel vehicle)
+        //{
+        //    Console.WriteLine("gor post");
+
+        //    var plate_id = vehicle.plateId;
+
+        //    Console.WriteLine(vehicle.plateId);
+        //    Console.WriteLine(vehicle.ticketType);
+        //    Console.WriteLine(vehicle.vehicleType);
+        //    Console.WriteLine(vehicle.vehicleHeight);
+        //    Console.WriteLine(vehicle.vehicleWidth);
+        //    Console.WriteLine(vehicle.vehicleLength);
+
+        //    int res = _vehicleService.InsertVehicle(vehicle);
+        //    Console.WriteLine(res);
+
+        //    _vehicleService.ShowGarage();
+
+        //    if(res != 0)
+        //    {
+        //        //Stream stream = Response.Body;
+        //        //stream.Write(Encoding.UTF8.GetBytes("" + res + ""));
+        //        //Response.ContentType = "text/plain";
+        //        Response.StatusCode = 401;
+        //        string result = "" + res;
+        //        Request.HttpContext.Response.Headers.Add("res", result);
+        //    }
+        //    else
+        //    {
+        //        Response.StatusCode = 200;
+        //    }
+
+        //    StatusCodeResult resultCode = new StatusCodeResult(Response.StatusCode);
+        //    return resultCode;
+        //}
     }
 }

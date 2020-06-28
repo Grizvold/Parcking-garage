@@ -1,32 +1,10 @@
 ﻿<Properties StartupConfiguration="{F99150F1-59FF-48D9-A42B-CEF20D4EC599}|Default">
   <MonoDevelop.Ide.ItemProperties.Parking-Garage PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Parking-Garage/Views/CheckIn/Index.cshtml">
-    <Files>
-      <File FileName="Parking-Garage/Services/VehicleService.cs" Line="24" Column="19" />
-      <File FileName="Parking-Garage/Models/TicketModel.cs" Line="14" Column="9" />
-      <File FileName="Parking-Garage/Controllers/GarageStateController.cs" Line="1" Column="1" />
-      <File FileName="Parking-Garage/wwwroot/js/site.js" Line="40" Column="80" />
-      <File FileName="Parking-Garage/Views/CheckIn/Index.cshtml" Line="25" Column="59" />
-    </Files>
+  <MonoDevelop.Ide.Workbench>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="Garage" expanded="True">
-            <Node name="Parking-Garage" expanded="True">
-              <Node name="Controllers" expanded="True" />
-              <Node name="Models" expanded="True" />
-              <Node name="Services" expanded="True" />
-              <Node name="Views" expanded="True">
-                <Node name="CheckIn" expanded="True">
-                  <Node name="Index.cshtml" selected="True" />
-                </Node>
-                <Node name="CheckOut" expanded="True" />
-              </Node>
-              <Node name="wwwroot" expanded="True">
-                <Node name="js" expanded="True" />
-              </Node>
-            </Node>
-          </Node>
+          <Node name="Garage" expanded="True" />
         </State>
       </Pad>
     </Pads>

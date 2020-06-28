@@ -9,7 +9,7 @@ namespace Parking_Garage.Services
 
         void ShowGarage();
 
-        void checkOutVehicle(string plateId);
+        bool checkOutVehicle(string plateId);
 
         Object getGarageStateObj();
     }

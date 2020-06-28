@@ -44,6 +44,7 @@ namespace Parking_Garage.Services
             if (!vehicle.ticketType.Equals(newTicketType))
             {
                 //TODO: return the currect ticket type
+                Console.WriteLine("*** the old *** " + vehicle.ticketType);
                 Console.WriteLine("*** the new *** " + newTicketType);
                 TicketModel oldT = new TicketModel(vehicle.ticketType);
                 TicketModel newT = new TicketModel(newTicketType);
@@ -62,6 +63,7 @@ namespace Parking_Garage.Services
         {
             if (vehiclesInGarage.ContainsKey(vehicle.plateId))
             {
+                Console.WriteLine("alreadyExist");
                 return false;
             }
 
@@ -133,6 +135,7 @@ namespace Parking_Garage.Services
                         vehicle.ticketType = "value";
                         if (!validateTicket(vehicle))
                         {
+                            vehicle.ticketType = "regular";
                             return "vip";
                         }
                         vehicle.ticketType = "regular";
@@ -192,8 +195,14 @@ namespace Parking_Garage.Services
         }
 
 
-        public void checkOutVehicle(string plateId)
+        public bool checkOutVehicle(string plateId)
         {
+            if (!vehiclesInGarage.ContainsKey(plateId))
+            {
+                Console.WriteLine("not found");
+                return false;
+            }
+
             vehiclesInGarage.Remove(plateId);
 
             foreach(int slot in slotToPlate.Keys)
@@ -204,6 +213,7 @@ namespace Parking_Garage.Services
                     break;
                 }
             }
+            return true;
         }
 
     }
