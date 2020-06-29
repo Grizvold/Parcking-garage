@@ -53,7 +53,7 @@ namespace Parking_Garage.Services
                 vehiclesInGarage.Add(vehicle.plateId, vehicle);
                 return 0;
             }
-            return 0;
+            return -1;
         }
 
         private bool insertToSlot(VehicleModel vehicle)

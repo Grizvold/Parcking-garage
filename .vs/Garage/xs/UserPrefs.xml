@@ -1,12 +1,23 @@
 ﻿<Properties StartupConfiguration="{F99150F1-59FF-48D9-A42B-CEF20D4EC599}|Default">
   <MonoDevelop.Ide.ItemProperties.Parking-Garage PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="Parking-Garage/wwwroot/js/site.js">
+    <Files>
+      <File FileName="Parking-Garage/Services/VehicleService.cs" Line="56" Column="22" />
+      <File FileName="Parking-Garage/Controllers/CheckInController.cs" Line="1" Column="1" />
+      <File FileName="Parking-Garage/wwwroot/js/site.js" Line="34" Column="43" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Garage" expanded="True">
             <Node name="Parking-Garage" expanded="True">
-              <Node name="Program.cs" selected="True" />
+              <Node name="Controllers" expanded="True" />
+              <Node name="Services" expanded="True" />
+              <Node name="wwwroot" expanded="True">
+                <Node name="js" expanded="True">
+                  <Node name="site.js" selected="True" />
+                </Node>
+              </Node>
             </Node>
           </Node>
         </State>

@@ -38,7 +38,12 @@ function sendPostToServer(url){
             alert('Checked-in successfully');
         }
         else if(xhr.readyState === 4 && xhr.status === 400){
-            alert(`check-in failed - wrong ticket, add ${JSON.parse(xhr.responseText)[0]}$`)
+            if(JSON.parse(xhr.responseText)[0] == -1){
+                alert("parking in full");
+            }
+            else{
+                alert(`check-in failed - wrong ticket, add ${JSON.parse(xhr.responseText)[0]}$`)
+            }
             return false
         }
     }
