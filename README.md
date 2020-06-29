@@ -11,9 +11,6 @@ recommended for you to check and try :
 * Try to fill up the parking.
 * check-out plateId that not exists.
 
-```
-Give an example
-```
 ## Built With
 
 * [ASP.NET] - The web framework used
