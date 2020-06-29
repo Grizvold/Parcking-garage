@@ -8,12 +8,11 @@ using Microsoft.AspNetCore.Mvc;
 using System.Text;
 using System.IO;
 
-// For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-
 namespace Parking_Garage.Controllers
 {
     public class CheckInController : Controller
     {
+        // get singleton service instance
         public readonly IVehicleService _vehicleService;
 
         public CheckInController(IVehicleService vehicleService)
@@ -30,68 +29,30 @@ namespace Parking_Garage.Controllers
         [HttpPost]
         public IActionResult Index([FromBody] VehicleModel vehicle)
         {
-            Console.WriteLine("gor post");
-
             var plate_id = vehicle.plateId;
 
-            Console.WriteLine(vehicle.plateId);
-            Console.WriteLine(vehicle.ticketType);
-            Console.WriteLine(vehicle.vehicleType);
-            Console.WriteLine(vehicle.vehicleHeight);
-            Console.WriteLine(vehicle.vehicleWidth);
-            Console.WriteLine(vehicle.vehicleLength);
+            //Console.WriteLine(vehicle.plateId);
+            //Console.WriteLine(vehicle.ticketType);
+            //Console.WriteLine(vehicle.vehicleType);
+            //Console.WriteLine(vehicle.vehicleHeight);
+            //Console.WriteLine(vehicle.vehicleWidth);
+            //Console.WriteLine(vehicle.vehicleLength);
 
             int res = _vehicleService.InsertVehicle(vehicle);
-            Console.WriteLine(res);
 
-            _vehicleService.ShowGarage();
+            //_vehicleService.ShowGarage(); //Debug
             IEnumerable<int> responseResult = new List<int> { res };
 
             if(res != 0)
             {
-                //Response.StatusCode = 400;
+                //StatusCode = 400;
                 return BadRequest(responseResult);
             }
             else
             {
-                //Response.StatusCode = 200;
+                //StatusCode = 200;
                 return Ok(responseResult);
             }
         }
-        //public StatusCodeResult Index([FromBody] VehicleModel vehicle)
-        //{
-        //    Console.WriteLine("gor post");
-
-        //    var plate_id = vehicle.plateId;
-
-        //    Console.WriteLine(vehicle.plateId);
-        //    Console.WriteLine(vehicle.ticketType);
-        //    Console.WriteLine(vehicle.vehicleType);
-        //    Console.WriteLine(vehicle.vehicleHeight);
-        //    Console.WriteLine(vehicle.vehicleWidth);
-        //    Console.WriteLine(vehicle.vehicleLength);
-
-        //    int res = _vehicleService.InsertVehicle(vehicle);
-        //    Console.WriteLine(res);
-
-        //    _vehicleService.ShowGarage();
-
-        //    if(res != 0)
-        //    {
-        //        //Stream stream = Response.Body;
-        //        //stream.Write(Encoding.UTF8.GetBytes("" + res + ""));
-        //        //Response.ContentType = "text/plain";
-        //        Response.StatusCode = 401;
-        //        string result = "" + res;
-        //        Request.HttpContext.Response.Headers.Add("res", result);
-        //    }
-        //    else
-        //    {
-        //        Response.StatusCode = 200;
-        //    }
-
-        //    StatusCodeResult resultCode = new StatusCodeResult(Response.StatusCode);
-        //    return resultCode;
-        //}
     }
 }

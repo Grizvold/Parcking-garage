@@ -1,11 +1,9 @@
-﻿// Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
-// for details on configuring this project to bundle and minify static web assets.
-
-// Write your JavaScript code.
+﻿// open new url 
 function openWindow(url){
     location.href = url;
 }
 
+//get vehicle data from form inputs
 function getData(){
     let vehicle = {
         name: document.getElementById("name").value,
@@ -21,6 +19,7 @@ function getData(){
     return vehicle;
 }
 
+// send post request to server to check-in vehicle
 function sendPostToServer(url){
     let data = getData();
     
@@ -45,7 +44,7 @@ function sendPostToServer(url){
     }
     xhr.send(JSON.stringify(data));
 }
-
+//validate inputs
 function validate(data){
     isValidversion = false;
 
@@ -59,7 +58,7 @@ function validate(data){
     return data != null && data != "" && isValidversion
 }
 
-
+// send delete request to server to check out vehicle
 function sendDeleteToServer(url){
 let data = {
             plateId: document.getElementById("plateId").value

@@ -43,9 +43,6 @@ namespace Parking_Garage.Services
             string newTicketType = validateVehicleTicket(vehicle);
             if (!vehicle.ticketType.Equals(newTicketType))
             {
-                //TODO: return the currect ticket type
-                Console.WriteLine("*** the old *** " + vehicle.ticketType);
-                Console.WriteLine("*** the new *** " + newTicketType);
                 TicketModel oldT = new TicketModel(vehicle.ticketType);
                 TicketModel newT = new TicketModel(newTicketType);
                 return newT.cost - oldT.cost;
@@ -63,7 +60,6 @@ namespace Parking_Garage.Services
         {
             if (vehiclesInGarage.ContainsKey(vehicle.plateId))
             {
-                Console.WriteLine("alreadyExist");
                 return false;
             }
 
@@ -161,32 +157,20 @@ namespace Parking_Garage.Services
             }
             if (ticket.maxHeight < vehicle.vehicleHeight)
             {
-                //TODO: in case size doesnt match
-                return false; // false
+                return false;
             }
 
             if (ticket.maxWidth < vehicle.vehicleWidth)
             {
-                //TODO: in case size doesnt match
-                return false; // false
+                return false; 
             }
 
             if (ticket.maxlength < vehicle.vehicleLength)
             {
-                //TODO: in case size doesnt match
-                return false; // false
+                return false; 
             }
 
             return true;
-        }
-
-
-        public void ShowGarage()
-        {
-            foreach (KeyValuePair<int, string> entry in slotToPlate)
-            {
-                Console.WriteLine("slot: " + entry.Key + ", plateID: " + entry.Value);
-            }
         }
 
         public Object getGarageStateObj()
@@ -199,7 +183,6 @@ namespace Parking_Garage.Services
         {
             if (!vehiclesInGarage.ContainsKey(plateId))
             {
-                Console.WriteLine("not found");
                 return false;
             }
 
@@ -214,6 +197,15 @@ namespace Parking_Garage.Services
                 }
             }
             return true;
+        }
+
+        //DEBUG
+        public void ShowGarage()
+        {
+            foreach (KeyValuePair<int, string> entry in slotToPlate)
+            {
+                Console.WriteLine("slot: " + entry.Key + ", plateID: " + entry.Value);
+            }
         }
 
     }

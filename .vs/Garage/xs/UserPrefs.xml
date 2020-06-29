@@ -4,7 +4,11 @@
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="Garage" expanded="True" />
+          <Node name="Garage" expanded="True">
+            <Node name="Parking-Garage" expanded="True">
+              <Node name="Program.cs" selected="True" />
+            </Node>
+          </Node>
         </State>
       </Pad>
     </Pads>

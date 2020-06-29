@@ -11,6 +11,7 @@ namespace Parking_Garage.Controllers
 {
     public class CheckOutController : Controller
     {
+        // get singleton service instance
         public readonly IVehicleService _vehicleService;
 
         public CheckOutController(IVehicleService vehicleService)
@@ -27,13 +28,9 @@ namespace Parking_Garage.Controllers
         [HttpDelete]
         public ActionResult Index([FromBody] VehicleModel vehicle)
         {
-            Console.WriteLine("gor post");
-
             var plate_id = vehicle.plateId;
 
-            Console.WriteLine("before checkout");
-            _vehicleService.ShowGarage();
-            Console.WriteLine("plate:" + plate_id);
+            //_vehicleService.ShowGarage(); //Debug
 
             if (_vehicleService.checkOutVehicle(plate_id))
             {

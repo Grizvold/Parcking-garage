@@ -10,15 +10,16 @@ using Parking_Garage.Services;
 
 namespace Parking_Garage.Controllers
 {
+    // get singleton service instance
     public class GarageStateController : Controller
     {
     
-    public readonly IVehicleService _vehicleService;
+        public readonly IVehicleService _vehicleService;
 
-    public GarageStateController(IVehicleService vehicleService)
-    {
-        _vehicleService = vehicleService;
-    }
+        public GarageStateController(IVehicleService vehicleService)
+        {
+            _vehicleService = vehicleService;
+        }
 
         // GET: /<controller>/
         public IActionResult Index()

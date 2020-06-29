@@ -22,7 +22,6 @@
     <Content Remove="wwwroot\images\car-logo.png" />
     <Content Remove="wwwroot\images\twitter-icons-background_52683-29716.jpg" />
     <Content Remove="wwwroot\images\backImg.png" />
-    <Content Remove="Views\GarageState\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Remove="Controllers\MainController.cs" />

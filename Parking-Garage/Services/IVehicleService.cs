@@ -7,7 +7,7 @@ namespace Parking_Garage.Services
     {
         int InsertVehicle(VehicleModel vehicle);
 
-        void ShowGarage();
+        void ShowGarage(); //Debug
 
         bool checkOutVehicle(string plateId);
 
