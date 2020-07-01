@@ -16,6 +16,4 @@ recommended for you to check and try :
 * [ASP.NET] - The web framework used
 * [Pure JavaScript] - Client
 
-## Authors
 
-* **Doron Ben Zaken**
